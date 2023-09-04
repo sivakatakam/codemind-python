@@ -1,0 +1,5 @@
+n=int(input())
+s=str(n)
+x=''.join(reversed(s))
+i=int(x)
+print(n==i)
