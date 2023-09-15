@@ -1,5 +1,2 @@
-n=int(input())
-s=str(n)
-x=''.join(reversed(s))
-i=int(x)
-print(n==i)
+n=input()
+print("".join(reversed(n))==n)
