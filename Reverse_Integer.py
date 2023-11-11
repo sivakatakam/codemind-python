@@ -1,15 +1,12 @@
-def fun(n):
-    rev=0
-    while n:
-        r=n%10
-        n=n//10
-        rev=rev*10+r
-    return rev
 n=int(input())
+s=0
 if n>0:
-    x=fun(n)
+    x=1
 else:
     n=n*-1
-    x=fun(n)
-    x=x*-1
-print(x)
+    x=-1
+while n>0:
+    r=n%10
+    n=n//10
+    s=s*10+r
+print(s*x)
