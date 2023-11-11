@@ -1,14 +1,12 @@
-a=int(input())
-b=int(input())
-s1=0
-s2=0
-for i in range(1,(a//2)+1):
-    if a%i==0:
-        s1=s1+i
-for i in range(1,(b//2)+1):
-    if b%i==0:
-        s2=s2+i
-if a==s2 and b==s1:
+def pro(n):
+    s=0
+    for i in range(1,n//2+2):
+        if n%i==0:
+            s=s+i
+    return s
+n1=int(input())
+n2=int(input())
+if pro(n1)==n2 and pro(n2)==n1:
     print("Amicable")
 else:
     print("Not Amicable")
